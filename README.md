@@ -1,5 +1,7 @@
-# CS50x — Introduction to Computer Science (Harvard University)
 
+# CS50x – Introduction to Computer Science (Harvard University)
+
+[![CS50 Certificate](https://cs50.harvard.edu/certificates/dcc9a885-20d7-49e8-985b-58320acf74ca.png?size=letter)](https://cs50.harvard.edu/certificates/dcc9a885-20d7-49e8-985b-58320acf74ca)
 ## Student
 
 * **Name:** Adam Abamahdi
