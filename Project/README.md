@@ -265,7 +265,7 @@ You need:
 
 Inside the `BankVault` folder:
 
-```bash
+
 gcc main.c utils.c accounts.c transactions.c storage.c ui.c -o bankvault
 Run
 On macOS / Linux:
@@ -423,4 +423,3 @@ Developed by: Adam Abamahdi
 Course: CS50x
 Language: C
 Tools: VS Code, GCC/Clang
-```
