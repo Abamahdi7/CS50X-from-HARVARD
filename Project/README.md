@@ -265,17 +265,16 @@ You need:
 
 Inside the `BankVault` folder:
 
-
+Compilation
 gcc main.c utils.c accounts.c transactions.c storage.c ui.c -o bankvault
 Run
-On macOS / Linux:
-
+On macOS / Linux
 ./bankvault
-On Windows:
-
+On Windows
 bankvault.exe
 How to Use
 Main Menu
+
 Once you log in, you can choose from options like:
 
 Dashboard
@@ -321,15 +320,17 @@ Both accounts show transfer logs
 
 Design Decisions
 Why binary files instead of text?
+
 Binary storage:
 
 is faster to load/write for structs
 
-preserves data types exactly (double/int)
+preserves data types exactly (double / int)
 
 is simpler for C-level persistence
 
 Why “soft delete”?
+
 Soft delete keeps history:
 
 real banks rarely “erase” accounts completely
@@ -339,6 +340,7 @@ audit logs must remain
 the system can still show that an account existed and was deleted
 
 Why transaction log separated from account state?
+
 This mirrors real design:
 
 accounts = current state
@@ -346,10 +348,12 @@ accounts = current state
 transactions = immutable history
 
 Security Notes
+
 This project is educational and runs locally.
+
 For real security, we would need:
 
-hashed passwords (bcrypt/scrypt/argon2)
+hashed passwords (bcrypt / scrypt / argon2)
 
 permission roles (admin vs teller vs customer)
 
@@ -364,6 +368,7 @@ file locking for multi-process safety
 BankVault focuses on correctness, structure, and features suitable for CS50.
 
 Limitations
+
 Single-user, local usage (not multi-user networked)
 
 No encryption for files
@@ -375,6 +380,7 @@ CSV export is basic and may not escape all edge cases
 Interest is manually applied (not scheduled)
 
 Future Improvements
+
 If extended further, possible upgrades:
 
 Implement password hashing
@@ -392,6 +398,7 @@ Add roles and permissions
 Add unit tests with scripted input and expected outputs
 
 Testing Notes
+
 This project was tested by:
 
 Creating multiple accounts and verifying unique IDs
@@ -419,7 +426,11 @@ verify transaction IDs continue correctly
 Daily withdrawal limit enforcement
 
 Credits
-Developed by: Adam Abamahdi
-Course: CS50x
-Language: C
-Tools: VS Code, GCC/Clang
+
+  Developed by: Adam Abamahdi
+
+  Course: CS50x
+
+  Language: C
+
+  Tools: VS Code, GCC/Clang
